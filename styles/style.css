@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+.banner{
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    right: 140px;
+    text-align: center;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+  
+}
+
+.banner h3{
+    top: 127px;
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+
+}
+
+.new-year {
+
+    filter: brightness(80%); /* Adjust the percentage to control the brightness */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
