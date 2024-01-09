@@ -13,12 +13,11 @@ body{
 }
 .banner-content{
     position: absolute;
+    padding-top: 0px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-
-  
 }
 
 .banner h3{
@@ -48,16 +47,6 @@ body{
 }
 
 
-.sixtyfive-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.sixtyfive-off {
-    font-size: 50px;
-}
 
 
 
