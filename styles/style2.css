@@ -3,45 +3,35 @@ body{
     padding: 0;
     font-family: 'Merriweather', sans-serif;
 }
-.banner {
-    /* position: relative; */
-    margin-top: 50px;
-    /* text-align: center; */
-    /* display: flex to create a flex container. The flex-direction: column property is used to stack the h3 and h1 tags vertically.  */
-    
-    /* flex streatches the image */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* keeping image middle top */
+p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+/* banner contain image then bannern content */
+.banner{
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    right: 140px;
+    text-align: center;
+}
+.banner-content{
+    position: absolute;
+    padding-top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
 }
 
-
-.new-year {
-
-    filter: brightness(80%); /* decreasing brightness to matchup with demo */
-    /* image do not exede original size */
-    max-width: 100%;
-    /* maintain ratio using height auto */
-    height: auto;
-    /* position: absolute; */
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%,-50%); */
-    z-index: 1;
-}
-
-
-.banner-content{
-    position: relative;
-    top: 0px;
-
-    z-index: 2;
-}
 .banner h3{
-    /* top: 127px; */
-    /* color: #FFF; */
+    top: 127px;
+    color: #FFF;
     text-align: center;
     font-family: Merriweather;
     font-size: 32px;
@@ -51,11 +41,109 @@ body{
 }
 
 .banner h1 {
-    /* color: #FFF; */
+    color: #FFF;
     text-align: center;
     font-family: Merriweather;
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
 
+}
+
+.new-year {
+
+    filter: brightness(80%); /* Adjust the percentage to control the brightness */
+}
+
+/* woring with sixty persent section */
+
+
+main section{
+    margin-top: 770px;
+}
+
+.discount{
+
+    /* to horizontally center the class */
+    justify-content: center;
+    /* margin-left: 45%; */
+    text-align: center;
+}
+
+
+.sixty{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.holiday{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.all-categories{
+    color: #070211;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* working with welcome section */
+/* <section class="welcome">
+<img class="vector-img" src="images/Vectorrr.png" alt=""> */
+
+
+
+
+
+/* new year banner */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 140px;
+    background-color: rgba(229, 84, 115, 0.10);
+}
+
+.welcome-banner-text {
+    text-align: left;
+    max-width: 50%; /* Adjust as needed */
+}
+
+.welcome-banner-text h1 {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+
+.welcome-banner-image {
+    max-width: 50%; /* Adjust as needed */
+    text-align: right;
+}
+
+.party-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.year-overlay-img {
+    max-width: 100%;
+    height: auto;
 }
