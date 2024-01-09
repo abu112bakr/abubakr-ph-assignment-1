@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.banner img {
+    width: auto;
+    height: auto;
+}
+.new-year {
+
+    filter: brightness(80%); /* Adjust the percentage to control the brightness */
+}
+
+.banner h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.sixtyfive-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sixtyfive-off {
+    font-size: 50px;
+}

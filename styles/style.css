@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Merriweather', sans-serif;
 }
+/* keeping image middle top */
 .banner{
     position: absolute;
     top: 50px;
@@ -47,9 +48,16 @@ body{
 }
 
 
+.sixtyfive-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-
-
+.sixtyfive-off {
+    font-size: 50px;
+}
 
 
 
