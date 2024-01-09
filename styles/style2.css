@@ -1,42 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
 .banner {
-    position: relative;
+    /* position: relative; */
     margin-top: 50px;
+    /* text-align: center; */
+    /* display: flex to create a flex container. The flex-direction: column property is used to stack the h3 and h1 tags vertically.  */
+    
+    /* flex streatches the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.banner img {
+/* .banner img {
     width: auto;
     height: auto;
-}
+} */
 .new-year {
 
-    filter: brightness(80%); /* Adjust the percentage to control the brightness */
-}
-
-.banner h3{
-    color: #FFF;
-    text-align: center;
-    font-family: Merriweather;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.banner h1 {
-    position: absolute;
+    filter: brightness(80%); /* decreasing brightness to matchup with demo */
+    /* image do not exede original size */
+    max-width: 100%;
+    /* maintain ratio using height auto */
+    height: auto;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%,-50%); */
+    z-index: 1;
 }
 
-
-.sixtyfive-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.sixtyfive-off {
-    font-size: 50px;
+.happy-new-year,
+.New-Year-party,
+.Celebration {
+    position: relative;
+    margin-top: 10px; /* Adjust this value as needed */
+    z-index: 2;
 }
