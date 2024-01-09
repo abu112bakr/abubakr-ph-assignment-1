@@ -4,6 +4,14 @@ body{
     font-family: 'Merriweather', sans-serif;
 }
 /* keeping image middle top */
+p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
 .banner{
     position: absolute;
     top: 50px;
@@ -90,4 +98,70 @@ main section{
     font-weight: 700;
     line-height: normal;
 }
+
+/* working with welcome section */
+/* <section class="welcome">
+<img class="vector-img" src="images/Vectorrr.png" alt=""> */
+
+
+
+
+
+/* new year banner */
+.welcome-container{
+    background-color: rgba(229, 84, 115, 0.10);
+    /* background-image: url('../images/Vectorrr.png'); */
+    background-repeat: no-repeat;
+    width: 76%;
+    max-width: 1660px;
+    /* margin updowh=0 left,right=auto */
+    margin: 0 auto;
+
+}
+.welcome-banner-text-image{
+    /* keeping h1 p join now button and image side by side */
+    display: flex;
+    align-items: center;
+    /* horizontally akto dure dure thakbe */
+    justify-content: space-between;
+}
+.welcome-banner-text-image .welcome-banner-text{
+    margin-bottom: 24px;
+    /* width of welcome to party is 642px, and 76% of 642 is 489px */
+    max-width: 489px;
+    left:1534px;
+}
+.welcome-banner-text-image .welcome-banner-text h1{
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px; /* 137.5% */
+    letter-spacing: 7.04px;
+}
+
+button.join-now{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.welcome-banner-text-image .welcome-banner-image{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
 
