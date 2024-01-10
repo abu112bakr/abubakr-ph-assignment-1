@@ -175,15 +175,56 @@ button.join-now{
 
 
 footer{
-    margin-top:100px;
-    /* background-color: #070211; */
-    background-color: rgba(229, 84, 115, 0.10);
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0px;
+    background-color: #070211;
+    color: #fff;
+    padding:100px 0 30px;
+    font-size: 24px;
+    line-height: 40px;
 
-    gap: 100px;
-    margin-top: 100px;
-    padding: 130px 200px;
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
 }
-.footer-part-one{
+
+.footer-row-one{
+    width: 85%;     /*row ta 85% width use korbe, full row use korbe na */
+    margin: auto;
+    display: flex;   /* row er content gula pasha pashi thakte parbe */
+    flex-wrap: wrap;  /* flex-wrap: wrap; determines whether the flex items should wrap or not when they exceed the width of the flex container. With flex-wrap: wrap;, the flex items will wrap onto multiple lines if necessary. */
+    align-items: flex-start; /* align-items: flex-start; specifies how flex items are aligned vertically within the flex container. With align-items: flex-start;, the flex items are aligned to the start of the cross axis. */
+    justify-content: space-between; /* justify-content: space-between; determines how the remaining space is distributed between and around flex items along the main axis. With justify-content: space-between;, the first flex item aligns to the start of the main axis, the last flex item aligns to the end of the main axis, and the remaining space is distributed equally between the flex items. */
+}
+/* row-two-col-one-line-one */
+.footer-row-two{
+    width:100%;
+    display: block;
+    
+}
+.footer-row-two-line-one {
+    width: 85%;
+    margin: auto;
     display: flex;
-    /* text-align: center; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 2px;
+}
+
+.footer-row-two-line-two{
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;    
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 2px;    
 }
