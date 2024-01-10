@@ -14,11 +14,11 @@ p{
 }
 /* banner contain image then bannern content */
 .banner{
-    position: absolute;
-    top: 50px;
-    left: 140px;
-    right: 140px;
-    text-align: center;
+    background-image: url('../images/Banner Image.png');
+    background-image: no-repeat;
+    background-size: contain;
+    width: 1140px;
+    height: 600px;
 }
 .banner-content{
     position: absolute;
@@ -68,6 +68,8 @@ main section{
     justify-content: center;
     /* margin-left: 45%; */
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -109,41 +111,161 @@ main section{
 
 
 /* new year banner */
-.welcome-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.welcome-container{
+    /* 100px down from the immidate thing */
     margin-top: 100px;
-    padding: 0 140px;
+    /* position: absolute; */
+    /* top:50px; */
+    top:100px;
+    left:140px;
+    right:140px;
+    text-align: center;
     background-color: rgba(229, 84, 115, 0.10);
+    
+    /* width: 76%; */
+    /* max-width: 1660px; */
+    /* margin updowh=0 left,right=auto */
+    /* margin: 0 auto; */
+
 }
 
-.welcome-banner-text {
-    text-align: left;
-    max-width: 50%; /* Adjust as needed */
-}
 
-.welcome-banner-text h1 {
+
+
+button.join-now{
     color: #FFF;
-    font-family: Merriweather;
-    font-size: 64px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 900;
-    line-height: 88px;
-    letter-spacing: 7.04px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
-.welcome-banner-image {
-    max-width: 50%; /* Adjust as needed */
-    text-align: right;
+/* this is the party section */
+
+.party-section{
+    /* position: relative;
+    top: 50px;
+    bottom: 100px;
+    margin-bottom: 200px;
+    width: 85%; */
+
+    /* position: relative;
+    top: 50px;
+    left: 140px;
+    right: 140px;
+    text-align: center; */
+    position: absolute;
+    top: 500px;
+    left: 140px;
+    right: 140px;
+    text-align: center;
 }
 
-.party-img {
-    max-width: 100%;
-    height: auto;
+.party-row-one{
+    width: 85%;     /*row ta 85% width use korbe, full row use korbe na */
+    margin: auto;
+    display: flex;   /* row er content gula pasha pashi thakte parbe */
+    flex-wrap: wrap;  /* flex-wrap: wrap; determines whether the flex items should wrap or not when they exceed the width of the flex container. With flex-wrap: wrap;, the flex items will wrap onto multiple lines if necessary. */
+    align-items: flex-start; 
+    
+    /* align-items: flex-start; specifies how flex items are aligned vertically within the flex container. With align-items: flex-start;, the flex items are aligned to the start of the cross axis. */
+    justify-content: space-between; /* justify-content: space-between; determines how the remaining space is distributed between and around flex items along the main axis. With justify-content: space-between;, the first flex item aligns to the start of the main axis, the last flex item aligns to the end of the main axis, and the remaining space is distributed equally between the flex items. */
+    
+    align-items: center; /* Align items vertically at the center*/
+
+    align-items: center; 
+    position: relative;
+
+}
+.party-row-one-col-one {
+    width: 50%; /* Adjust the width as needed */
+}
+  
+.party-row-one-col-two {
+    width: 50%; /* Adjust the width as needed */
 }
 
-.year-overlay-img {
-    max-width: 100%;
-    height: auto;
+footer{
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0px;
+    background-color: #070211;
+    color: #fff;
+    padding:100px 0 30px;
+    font-size: 24px;
+    line-height: 40px;
+
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+    /* new */
+    top: 100px;
+    /* position: relative; */
+    bottom: 0px;
+}
+
+.footer-row-one{
+    width: 85%;     /*row ta 85% width use korbe, full row use korbe na */
+    margin: auto;
+    display: flex;   /* row er content gula pasha pashi thakte parbe */
+    flex-wrap: wrap;  /* flex-wrap: wrap; determines whether the flex items should wrap or not when they exceed the width of the flex container. With flex-wrap: wrap;, the flex items will wrap onto multiple lines if necessary. */
+    align-items: flex-start; /* align-items: flex-start; specifies how flex items are aligned vertically within the flex container. With align-items: flex-start;, the flex items are aligned to the start of the cross axis. */
+    justify-content: space-between; /* justify-content: space-between; determines how the remaining space is distributed between and around flex items along the main axis. With justify-content: space-between;, the first flex item aligns to the start of the main axis, the last flex item aligns to the end of the main axis, and the remaining space is distributed equally between the flex items. */
+}
+/* row-two-col-one-line-one */
+.footer-row-two{
+    width:100%;
+    display: block;
+    
+}
+.footer-row-two-line-one {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 2px;
+}
+/* <div class="footer-row-two-icons"> <!-- flex--> */
+.footer-row-two-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    
+}
+.icon {
+    margin: 10px; /* Add styling for icons here */
+    
+  }
+.footer-icons{
+    margin-right: 20px;
+}
+.footer-row-two-line-two{
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;    
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 2px;    
+}
+
+.footer-row-three{
+    width: 85%; 
+    margin: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    justify-content: space-between;
 }

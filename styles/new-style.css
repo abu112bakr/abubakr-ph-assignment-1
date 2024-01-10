@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+/* keeping image middle top */
+p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+/* banner contain image then bannern content */
+.header{
+    /* 1600-140=1460 */
+     /* width: 1460px;   */   /* not work*/
+    width: 1140px;
+    /* width: 1320px; */
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.banner-container{
+    background-image: url('../images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1140px;
+    height: 600px;
+    filter: brightness(90%);
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h3{
+    padding-top: 100px;
+
+    top: 127px;
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-text h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* dsicount section */
+.discount{
+    width: 600px;
+    margin: 0 auto;
+}
+.discount-row-one-container{
+    text-align: center;
+}
+.discount-row-one-container h1{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.discount-row-one-container h3{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.discount-row-one-container h2{
+    color: #070211;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* e=party section styles */
+.party-section{
+    width: 1140px;
+    margin: 0 auto;    
+}
+.party-container-image{
+    margin-top: 150px;
+    background-image: url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 600px;
+    background-size: contain;
+    filter: brightness(90%);
+}
+.party-container-row-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;  /* try 50 */
+}
+.party-container-row-one-col-one-text h1{
+    margin-top: 20px;
+    color: #FFF;
+    width: 640px;
+    font-family: Merriweather;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px; /* 137.5% */
+    letter-spacing: 7.04px;
+}
+
+.party-container-row-one-col-one-text p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.party-join-btn{
+    width: 100px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.party-container-row-one-col-two-image img{
+    width: 290px;       /* 300px */
+    height: 390px;      /* 400px */
+    /* padding-top: 40px; */
+    /* padding-right: 50px;     */
+    /* 40px */
+}
+
+/* venu section */
+.venu-section{
+    width: 1140px;
+    margin: 0 auto;
+}
+.venu-container{
+    width: 1140px;
+    height: 482px;
+    margin-top: 100px;
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    border-radius: 10px;
+
+
+}
+.venu-row-one-text p{
+    color: #070211;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+.venu-row-one-text span{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 175% */
+    text-transform: capitalize;
+    line-height: 1;
+}
+.venu-row-one-text button{
+    cursor: pointer;
+    text-transform: uppercase;
+    /* display: inline-flex; */
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    border-radius: 8px;
+    background: #F00;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+}
+
