@@ -13,23 +13,30 @@ p{
     line-height: 32px; /* 160% */
 }
 /* banner contain image then bannern content */
-.banner{
-    position: absolute;
-    top: 50px;
-    left: 140px;
-    right: 140px;
-    text-align: center;
-}
-.banner-content{
-    position: absolute;
-    padding-top: 0px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.header{
+    /* 1600-140=1460 */
+     /* width: 1460px;   */   /* not work*/
+    width: 1140px;
+    /* width: 1320px; */
+    margin: 0 auto;
+    margin-top: 100px;
+
 }
 
-.banner h3{
+.banner-container{
+    background-image: url('../images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1140px;
+    height: 600px;
+    filter: brightness(90%);
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h3{
+    padding-top: 100px;
+
     top: 127px;
     color: #FFF;
     text-align: center;
@@ -39,41 +46,24 @@ p{
     font-weight: 400;
     line-height: normal;
 }
-
-.banner h1 {
+.banner-text h1{
     color: #FFF;
     text-align: center;
     font-family: Merriweather;
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
-
 }
 
-.new-year {
-
-    filter: brightness(80%); /* Adjust the percentage to control the brightness */
-}
-
-/* woring with sixty persent section */
-
-
-main section{
-    margin-top: 770px;
-}
-
+/* dsicount section */
 .discount{
-
-    /* to horizontally center the class */
-    justify-content: center;
-    /* margin-left: 45%; */
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 600px;
+    margin: 0 auto;
 }
-
-
-.sixty{
+.discount-row-one-container{
+    text-align: center;
+}
+.discount-row-one-container h1{
     color: #F00;
     text-align: center;
     font-family: Inter;
@@ -82,7 +72,7 @@ main section{
     font-weight: 700;
     line-height: normal;
 }
-.holiday{
+.discount-row-one-container h3{
     color: #F00;
     text-align: center;
     font-family: Inter;
@@ -91,8 +81,7 @@ main section{
     font-weight: 500;
     line-height: normal;
 }
-
-.all-categories{
+.discount-row-one-container h2{
     color: #070211;
     text-align: center;
     font-family: Inter;
@@ -102,37 +91,48 @@ main section{
     line-height: normal;
 }
 
-/* working with welcome section */
-/* <section class="welcome">
-<img class="vector-img" src="images/Vectorrr.png" alt=""> */
-
-
-
-
-
-/* new year banner */
-.welcome-container{
-    /* 100px down from the immidate thing */
-    margin-top: 100px;
-    /* position: absolute; */
-    /* top:50px; */
-    top:100px;
-    left:140px;
-    right:140px;
-    text-align: center;
-    background-color: rgba(229, 84, 115, 0.10);
-    
-    /* width: 76%; */
-    /* max-width: 1660px; */
-    /* margin updowh=0 left,right=auto */
-    /* margin: 0 auto; */
-
+/* e=party section styles */
+.party-section{
+    width: 1140px;
+    margin: 0 auto;    
+}
+.party-container-image{
+    margin-top: 150px;
+    background-image: url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 600px;
+    background-size: contain;
+    filter: brightness(90%);
+}
+.party-container-row-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;  /* try 50 */
+}
+.party-container-row-one-col-one-text h1{
+    margin-top: 20px;
+    color: #FFF;
+    width: 640px;
+    font-family: Merriweather;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px; /* 137.5% */
+    letter-spacing: 7.04px;
 }
 
-
-
-
-button.join-now{
+.party-container-row-one-col-one-text p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.party-join-btn{
+    width: 100px;
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -141,53 +141,375 @@ button.join-now{
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.party-container-row-one-col-two-image img{
+    width: 290px;       /* 300px */
+    height: 390px;      /* 400px */
+    /* padding-top: 40px; */
+    /* padding-right: 50px;     */
+    /* 40px */
 }
 
-/* this is the party section */
-
-.party-section{
-    /* position: relative;
-    top: 50px;
-    bottom: 100px;
-    margin-bottom: 200px;
-    width: 85%; */
-
-    /* position: relative;
-    top: 50px;
-    left: 140px;
-    right: 140px;
-    text-align: center; */
-    position: absolute;
-    top: 500px;
-    left: 140px;
-    right: 140px;
+/* venu section */
+.venu-section{
+    width: 1140px;
+    margin: 0 auto;
+}
+.venu-container{
+    width: 1140px;
+    height: 482px;
+    margin-top: 100px;
+    padding-top: 50px;
     text-align: center;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    border-radius: 10px;
+
+
+}
+.venu-row-one-text p{
+    color: #070211;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+.venu-row-one-text span{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 175% */
+    text-transform: capitalize;
+    line-height: 1;
+}
+.venu-row-one-text button{
+    cursor: pointer;
+    text-transform: uppercase;
+    /* display: inline-flex; */
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    border-radius: 8px;
+    background: #F00;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+}
+/* commingscoon section */
+.commingsoon-section{
+    width: 1140px;
+    margin: 0 auto;
+}
+.commingsoon-row-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 200px;
+}
+.commingsoon-row-one-col-one-newbestoffer h4{
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.commingsoon-row-one-col-one-newbestoffer h2{
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.commingsoon-row-one-col-one-newbestoffer p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+.commingsoon-row-one-col-two-image{
+    /* width: 295px; */
+    width: 290px;
+    /* height: 295px; */
+    height: 290px;
+    border: 10px solid #F00;
+    border-radius: 300px;
+    padding: 5px;
+}
+.commingsoon-row-one-col-two-image-trabatti{
+    background: url('../images/Ellipse 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 300px;
+    width: 290px;
+    height: 290px;
 }
 
-.party-row-one{
-    width: 85%;     /*row ta 85% width use korbe, full row use korbe na */
-    margin: auto;
-    display: flex;   /* row er content gula pasha pashi thakte parbe */
-    flex-wrap: wrap;  /* flex-wrap: wrap; determines whether the flex items should wrap or not when they exceed the width of the flex container. With flex-wrap: wrap;, the flex items will wrap onto multiple lines if necessary. */
-    align-items: flex-start; 
-    
-    /* align-items: flex-start; specifies how flex items are aligned vertically within the flex container. With align-items: flex-start;, the flex items are aligned to the start of the cross axis. */
-    justify-content: space-between; /* justify-content: space-between; determines how the remaining space is distributed between and around flex items along the main axis. With justify-content: space-between;, the first flex item aligns to the start of the main axis, the last flex item aligns to the end of the main axis, and the remaining space is distributed equally between the flex items. */
-    
-    align-items: center; /* Align items vertically at the center*/
+.commingsoon-row-one-col-three-textandimage h2{
+    color: #F00;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 20px;
+}
+.commingsoon-row-one-col-three-textandimage p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    padding-left: 20px;
+}
+.commingsoon-row-one-col-three-textandimage img{
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+}
 
-    align-items: center; 
+/* holidays */
+.holidays-section{
+    width: 1140px;
+    margin: 0 auto;
+}
+.holidays-col-one-text{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.holidays-col-one-text h5{
+    color: #070211;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.holidays-col-one-text h2{
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.holidays-col-one-text span{
+    color: #F00;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.holidays-col-one-text p{
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+}
+.holidays-col-two-reactangle-one {
+    background: url('../images/Rectangle 1.png');
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    width: 429px;   /* change to fit image original size 429px by 433px*/
+    height: 433px;
+    background-position: left;
+    margin-left: 700px;
+}
+.holidays-col-two-reactangle-two {
+    background: url('../images/Rectangle 2.png');
+    /* background-repeat: no-repeat; */
+    width: 1129px; /*original 1320px by 229px */
+    height: 200px;
+    position: relative;   /*absolute not working*/
+}
+
+.holidays-col-two-reactangle-two-gift-image img{
+    /* Group 75.png Gift box image*/
+    width: 500px;
+    height: 400px;
+}
+.holidays-col-two-reactangle-two-discount-image img{
+    width: 300px;
+    height: 300px;
+}
+.holidays-col-two-reactangle-two-gift-image {
+    position: absolute;
+    top: -290px;
+    left: 70px;
+}
+.holidays-col-two-reactangle-two-discount-image{
+    position: absolute;
+    top: -330px;
+    left: 520px;
+}
+/* portfolio section */
+.portfolio-section{
+    width: 1140px;
+    margin: 0 auto;
+}
+.portfolio-row-one-text{
+    margin-top: 100px;
+    padding: 10px;
+}
+.portfolio-row-one-text h5{
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.portfolio-row-one-text h2{
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.portfolio-row-one-text p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    /* not working */
+    text-align: left;
+}
+.portfolio-row-two-image-same-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+.item-same-class{
+    width: 400px;
+    height: 400px;
+}
+.hover-item-same-class {
+    width: 350px;
+    height: 320px;    
+}
+.hover-item-same-class:hover {
+    opacity: 0.1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* transition: 1s; */
+    cursor: pointer;
+
+}
+
+/* newsletter section */
+.newsletter{
+    width: 1140px;
+    margin: 0 auto;
+}
+.newsletter-container{
+    width: 1320px;
+    height: 616px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+.newsletter-row-one-container-email-img{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    padding-top: 100px;
+}
+.newsletter-row-one-container-email-img img{
+    width: 150px;
+    height: 150px;
+}
+.newsletter-row-two-text h2{
+    color: #070211;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.newsletter-row-two-text p{
+    width: 890px;
+    margin: 0 auto;
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+.newsletter-row-three-input{
+    text-align: center;
+    padding-top: 50px;
+}
+.newsletter-row-three-input form{
+    width: 648px;
+    height: 72px;
+    margin: 0 auto;
+    border-radius: 30px;
     position: relative;
+    background: transparent;
+}
+/* form, form er vitor button */
+.newsletter-row-three-input form button{
+    width: 150px;
+    height: 60px;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* form, form er vitor input */
+/* changed lol */
+.newsletter-row-three-input form input{
+    width: 640px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;    
+}
+.newsletter-row-three-input form input::placeholder {
+    color: rgba(7, 2, 17, 0.30);
+    font-size: 20px;
+    font-weight: 400;
+}
 
-}
-.party-row-one-col-one {
-    width: 50%; /* Adjust the width as needed */
-}
-  
-.party-row-one-col-two {
-    width: 50%; /* Adjust the width as needed */
-}
 
+/* footer lol */
 footer{
     width: 100%;
     /* position: absolute; */
@@ -268,4 +590,7 @@ footer{
     flex-wrap: wrap; 
     align-items: flex-start; 
     justify-content: space-between;
+}
+.footer-row-three-col-two h3{
+    cursor: pointer;
 }
